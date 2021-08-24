@@ -5,7 +5,7 @@ This contains 2 function declerations that can be called with a given Recaptha t
 ## Usage:
 Get your recaptcha token string...
 ```
-const token = yourRecaptchaTokenReceiverMethod();
+const token = <yourRecaptchaTokenReceiverMethod>();
 ```
 
 Then, use this function to find and call Google Recaptcha's callback method.
