@@ -18,6 +18,7 @@ const callbackFinder = function() {
     return result;
 }
 
-const callbackMethodKeys = callbackFinder();
-const recaptchaToken = "<INSERT YOUR TOKEN HERE>";
-window["___grecaptcha_cfg"]["clients"][0][callbackMethodKeys[0]][callbackMethodKeys[1]]["callback"](recaptchaToken)
+const callCallbackMethod = function(token) {
+	const callbackMethodKeys = callbackFinder();
+	window["___grecaptcha_cfg"]["clients"][0][callbackMethodKeys[0]][callbackMethodKeys[1]]["callback"](token)
+}
